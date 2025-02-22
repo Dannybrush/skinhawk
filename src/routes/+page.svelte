@@ -151,11 +151,12 @@
 		margin-right: auto;
 	}
     .band-members {
-  display: flex;
-  flex-wrap: nowrap;  /* Prevents wrapping to new lines */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  justify-content: space-between;
+  justify-content: center;
 }
+
 
 .band-member {
   flex: 1 1 0; /* Allow each to grow and shrink equally */
