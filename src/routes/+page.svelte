@@ -150,36 +150,22 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-
-	/*
     .band-members {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-wrap: nowrap;  /* Prevents wrapping to new lines */
   gap: 1.5rem;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-
 .band-member {
-  flex: 1 1 0; /* Allow each to grow and shrink equally */ /*
+  flex: 1 1 0; /* Allow each to grow and shrink equally */
   background: #222;
   padding: 1.5rem;
   border-radius: 8px;
   text-shadow: 2px 2px 0 #ff0000;
   transition: transform 0.2s;
-  min-width: 0; /* Ensures items can shrink below content's intrinsic width */ /*
-} 
-*/
-	.band-members {
-		display: flex;
-		gap: 1.5rem;
-		overflow-x: auto;
-		padding-bottom: 1rem;
-	}
-	.band-member {
-		flex: 0 0 auto;
-		width: 200px;
-	}
+  min-width: 0; /* Ensures items can shrink below content's intrinsic width */
+}
 
 	.band-member:hover {
 		transform: scale(1.1);
