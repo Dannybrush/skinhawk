@@ -150,22 +150,19 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-    .band-members {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
-  gap: 1.5rem;
-  justify-content: center;
-}
+	.band-members {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1.5rem;
+	}
 
-.band-member {
-  flex: 1 1 0; /* Allow each to grow and shrink equally */
-  background: #222;
-  padding: 1.5rem;
-  border-radius: 8px;
-  text-shadow: 2px 2px 0 #ff0000;
-  transition: transform 0.2s;
-  min-width: 0; /* Ensures items can shrink below content's intrinsic width */
-}
+	.band-member {
+		background: #222;
+		padding: 1.5rem;
+		border-radius: 8px;
+		text-shadow: 2px 2px 0 #ff0000;
+		transition: transform 0.2s;
+	}
 
 	.band-member:hover {
 		transform: scale(1.1);
